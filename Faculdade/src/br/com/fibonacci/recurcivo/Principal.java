@@ -13,21 +13,21 @@ public class Principal {
 		do {
 			count = 0;
 			do {
-				preNumero = JOptionPane.showInputDialog(null, "numeroorme um n�mero");
+				preNumero = JOptionPane.showInputDialog(null, "numeroorme um número");
 				if (!Char(preNumero)) {
 					JOptionPane.showMessageDialog(null,
-							"N�o � um valor v�lido, por favor, repita o processo e numeroorme um N�MERO NATURAL.",
-							"T� Errado Isso Ai", JOptionPane.ERROR_MESSAGE);
+							"Não é um valor válido, por favor, repita o processo e numeroorme um NÚMERO NATURAL.",
+							"Tá Errado Isso Ai", JOptionPane.ERROR_MESSAGE);
 				} else {
 					numero = Integer.parseInt(preNumero);
 					if (numero >= 43) {
-						JOptionPane.showMessageDialog(null, "Desculpe, o valor � muito grande para ser calculado",
+						JOptionPane.showMessageDialog(null, "Desculpe, o valor é muito grande para ser calculado",
 								"FpreNumero mal...", JOptionPane.ERROR_MESSAGE);
 					}
 				}
 			} while (numero >= 43 || !Char(preNumero));
 
-			JOptionPane.showMessageDialog(null, "N�mero\n" + Fibo(numero));
+			JOptionPane.showMessageDialog(null, "Número\n" + Fibo(numero));
 
 			JOptionPane.showMessageDialog(null, "Chamadas\n" + count);
 
@@ -53,7 +53,7 @@ public class Principal {
 		boolean d = true;
 
 		for (int i = 0; i < c.length; i++)
-			// verifica se o char � um d�gito
+			// verifica se o char é um dígito
 			if (!Character.isDigit(c[i])) {
 				d = false;
 				break;
